@@ -28,6 +28,9 @@ namespace DP.CreationalPatterns
                 case "4":
                     Prototype.Prototype.Executar();
                     break;
+                case "5":
+                    Singleton.Singleton.Executar();
+                    break;
                 case "S":
                     Console.Clear();
                     return;                                    
@@ -44,6 +47,7 @@ namespace DP.CreationalPatterns
             Console.WriteLine("2 - Builder");
             Console.WriteLine("3 - Factory Method");
             Console.WriteLine("4 - Prototype");
+            Console.WriteLine("5 - Singleton");
             Console.WriteLine("\nS - Sair");
             Console.WriteLine("---------------------------");
         }
