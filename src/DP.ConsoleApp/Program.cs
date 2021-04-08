@@ -6,6 +6,8 @@ namespace DP.ConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Projeto foi feito com base nos exemplos do site https://www.dofactory.com/net/design-patterns");
+            Console.WriteLine("");
             Opcoes();
         }
         
@@ -19,7 +21,7 @@ namespace DP.ConsoleApp
                     Console.Clear();                    
                     break;
                 case "1":
-                    _ = new CreationalPatterns.CreationalPatterns();
+                    CreationalPatterns.CreationalPatterns.Executar();
                     Console.Clear();
                     Opcoes();
                     break;
@@ -39,6 +41,9 @@ namespace DP.ConsoleApp
 
         private static void Opcoes()
         {
+            Console.WriteLine("Para um melhor entendimento como sugestão utilizar o debug.");
+            Console.WriteLine("");
+            Console.WriteLine("");
             Console.WriteLine("Selecione o padrão:");
             Console.WriteLine("");
             Console.WriteLine("1 - Creational Patterns (Padrões de criação)");

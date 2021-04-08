@@ -4,33 +4,35 @@ namespace DP.CreationalPatterns
 {
     public class CreationalPatterns
     {
-        public CreationalPatterns()
+        public static void Executar()
         {
             Console.Clear();
             Opcoes();
-            var opcao = Console.ReadKey().ToString();
+            var opcao = Console.ReadKey().KeyChar.ToString().ToUpper();
             Executar(opcao);
         }
 
-        private void Executar(string opcao)
+        private static void Executar(string opcao)
         {
             switch (opcao)
             {
+                case "1":
+                    AbstractFactory.AbstractFactory.Executar();
+                    Executar();
+                    break;
                 case "S":
                     Console.Clear();
                     break;
-                default:
-                    Console.Clear();
-                    Console.WriteLine("Opção inválida!");
-                    Console.WriteLine();
-                    Opcoes();
+                default:                    
+                    Executar();
                     break;
             }
         }
 
-        private void Opcoes()
+        private static void Opcoes()
         {            
             Console.WriteLine("Selecione uma opção");
+            Console.WriteLine("1 - Abstract Factory");
             Console.WriteLine("S - Sair");
         }
     }
