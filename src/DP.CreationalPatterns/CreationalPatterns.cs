@@ -25,6 +25,9 @@ namespace DP.CreationalPatterns
                 case "3":
                     FactoryMethod.FactoryMethod.Executar();
                     break;
+                case "4":
+                    Prototype.Prototype.Executar();
+                    break;
                 case "S":
                     Console.Clear();
                     return;                                    
@@ -40,6 +43,7 @@ namespace DP.CreationalPatterns
             Console.WriteLine("1 - Abstract Factory");
             Console.WriteLine("2 - Builder");
             Console.WriteLine("3 - Factory Method");
+            Console.WriteLine("4 - Prototype");
             Console.WriteLine("\nS - Sair");
             Console.WriteLine("---------------------------");
         }
