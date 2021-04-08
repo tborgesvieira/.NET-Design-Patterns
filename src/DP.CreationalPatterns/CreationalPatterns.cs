@@ -34,11 +34,13 @@ namespace DP.CreationalPatterns
         }
 
         private static void Opcoes()
-        {            
+        {
+            Console.WriteLine("---------------------------");
             Console.WriteLine("Selecione uma opção");
             Console.WriteLine("1 - Abstract Factory");
             Console.WriteLine("2 - Builder");
             Console.WriteLine("S - Sair");
+            Console.WriteLine("---------------------------");
         }
     }
 }

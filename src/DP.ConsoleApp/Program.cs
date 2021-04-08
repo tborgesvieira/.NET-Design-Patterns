@@ -8,7 +8,9 @@ namespace DP.ConsoleApp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
+            Console.WriteLine("----------------------------------------------------------------------------------------------");
             Console.WriteLine("Projeto foi feito com base nos exemplos do site https://www.dofactory.com/net/design-patterns");
+            Console.WriteLine("----------------------------------------------------------------------------------------------");
             Console.WriteLine("");
             Opcoes();
         }
@@ -43,6 +45,7 @@ namespace DP.ConsoleApp
 
         private static void Opcoes()
         {
+            Console.WriteLine("-----------------------------------------------------------");
             Console.WriteLine("Para um melhor entendimento como sugestão utilizar o debug.");
             Console.WriteLine("");
             Console.WriteLine("");
@@ -50,6 +53,7 @@ namespace DP.ConsoleApp
             Console.WriteLine("");
             Console.WriteLine("1 - Creational Patterns (Padrões de criação)");
             Console.WriteLine("S - Sair");
+            Console.WriteLine("-----------------------------------------------------------");
             OpcaoSelecionada();
         }
     }
