@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DP.Helpers;
+using System;
 
 namespace DP.CreationalPatterns.AbstractFactory
 {
@@ -10,10 +7,11 @@ namespace DP.CreationalPatterns.AbstractFactory
     {
         public static void Executar()
         {
-            Console.Clear();
-            Console.WriteLine("Abstract Factory");
-            Console.WriteLine("Fornece uma interface para a criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas");
-            Console.WriteLine("");
+            CabecalhoHelper.GerarCabecalho(
+                "Creational Patterns", 
+                "Abstract Factory", 
+                5, 
+                "Fornece uma interface para a criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas");
 
             ContinenteFactory africa = new AfricaFactory();
 

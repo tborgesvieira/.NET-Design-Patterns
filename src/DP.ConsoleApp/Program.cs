@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace DP.ConsoleApp
 {
@@ -6,6 +7,7 @@ namespace DP.ConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Projeto foi feito com base nos exemplos do site https://www.dofactory.com/net/design-patterns");
             Console.WriteLine("");
             Opcoes();
