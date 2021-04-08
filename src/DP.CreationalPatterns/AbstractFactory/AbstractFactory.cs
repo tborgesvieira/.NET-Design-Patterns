@@ -23,9 +23,7 @@ namespace DP.CreationalPatterns.AbstractFactory
             animaisDoMundo = new AnimaisDoMundo(america);
             animaisDoMundo.IniciarCadeiaAlimentar();
 
-            Console.WriteLine("");
-            Console.WriteLine("Pressione uma tecla para sair!");
-            Console.ReadKey();
+            RodapeHelper.Rodape();
         }
     }
 }
