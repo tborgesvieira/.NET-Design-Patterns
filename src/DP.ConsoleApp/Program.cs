@@ -52,7 +52,7 @@ namespace DP.ConsoleApp
             Console.WriteLine("Selecione o padrão:");
             Console.WriteLine("");
             Console.WriteLine("1 - Creational Patterns (Padrões de criação)");
-            Console.WriteLine("S - Sair");
+            Console.WriteLine("\nS - Sair");
             Console.WriteLine("-----------------------------------------------------------");
             OpcaoSelecionada();
         }

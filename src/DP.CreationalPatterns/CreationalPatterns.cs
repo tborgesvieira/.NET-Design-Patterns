@@ -17,20 +17,20 @@ namespace DP.CreationalPatterns
             switch (opcao)
             {
                 case "1":
-                    AbstractFactory.AbstractFactory.Executar();
-                    Executar();
+                    AbstractFactory.AbstractFactory.Executar();                    
                     break;
                 case "2":
-                    Builder.Builder.Executar();
-                    Executar();
+                    Builder.Builder.Executar();                    
+                    break;
+                case "3":
+                    FactoryMethod.FactoryMethod.Executar();
                     break;
                 case "S":
                     Console.Clear();
-                    break;
-                default:                    
-                    Executar();
-                    break;
+                    return;                                    
             }
+
+            Executar();
         }
 
         private static void Opcoes()
@@ -39,7 +39,8 @@ namespace DP.CreationalPatterns
             Console.WriteLine("Selecione uma opção");
             Console.WriteLine("1 - Abstract Factory");
             Console.WriteLine("2 - Builder");
-            Console.WriteLine("S - Sair");
+            Console.WriteLine("3 - Factory Method");
+            Console.WriteLine("\nS - Sair");
             Console.WriteLine("---------------------------");
         }
     }
