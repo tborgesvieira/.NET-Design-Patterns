@@ -20,6 +20,10 @@ namespace DP.CreationalPatterns
                     AbstractFactory.AbstractFactory.Executar();
                     Executar();
                     break;
+                case "2":
+                    Builder.Builder.Executar();
+                    Executar();
+                    break;
                 case "S":
                     Console.Clear();
                     break;
@@ -33,6 +37,7 @@ namespace DP.CreationalPatterns
         {            
             Console.WriteLine("Selecione uma opção");
             Console.WriteLine("1 - Abstract Factory");
+            Console.WriteLine("2 - Builder");
             Console.WriteLine("S - Sair");
         }
     }
