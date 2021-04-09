@@ -25,7 +25,7 @@ namespace DP.ConsoleApp
                     Console.Clear();                    
                     break;
                 case "1":
-                    CreationalPatterns.CreationalPatterns.Executar();
+                    CreationalPatterns.CreationalPatterns.CreationalPatterns.Executar();
                     Console.Clear();
                     Opcoes();
                     break;

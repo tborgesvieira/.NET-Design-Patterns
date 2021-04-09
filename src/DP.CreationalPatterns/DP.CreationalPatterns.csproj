@@ -8,4 +8,8 @@
     <ProjectReference Include="..\DP.Helpers\DP.Helpers.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="StructuralPatterns\" />
+  </ItemGroup>
+
 </Project>

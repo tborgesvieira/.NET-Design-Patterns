@@ -1,6 +1,7 @@
-﻿using System;
+﻿using DP.Helpers;
+using System;
 
-namespace DP.CreationalPatterns
+namespace DP.CreationalPatterns.CreationalPatterns
 {
     public class CreationalPatterns
     {
@@ -17,10 +18,10 @@ namespace DP.CreationalPatterns
             switch (opcao)
             {
                 case "1":
-                    AbstractFactory.AbstractFactory.Executar();                    
+                    AbstractFactory.AbstractFactory.Executar();
                     break;
                 case "2":
-                    Builder.Builder.Executar();                    
+                    Builder.Builder.Executar();
                     break;
                 case "3":
                     FactoryMethod.FactoryMethod.Executar();
@@ -33,7 +34,7 @@ namespace DP.CreationalPatterns
                     break;
                 case "S":
                     Console.Clear();
-                    return;                                    
+                    return;
             }
 
             Executar();
@@ -41,6 +42,10 @@ namespace DP.CreationalPatterns
 
         private static void Opcoes()
         {
+            CabecalhoHelper.GerarCabecalho(
+                "Creational Pattern",
+                "São padrões de design que lidam com mecanismos de criação de objetos,\ntentando criar objetos de maneira adequada à situação.\nA forma básica de criação de objeto pode resultar em problemas de design ou em complexidade adicional ao design.");
+
             Console.WriteLine("---------------------------");
             Console.WriteLine("Selecione uma opção");
             Console.WriteLine("1 - Abstract Factory");

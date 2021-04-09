@@ -1,4 +1,4 @@
-﻿namespace DP.CreationalPatterns.AbstractFactory
+﻿namespace DP.CreationalPatterns.CreationalPatterns.AbstractFactory
 {
     abstract class Carnivoro
     {

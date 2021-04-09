@@ -15,5 +15,15 @@ namespace DP.Helpers
             Console.WriteLine("---------------------------");
             Console.WriteLine("");
         }
+
+        public static void GerarCabecalho(string grupo, string explicacao)
+        {
+            Console.Clear();
+            Console.WriteLine("---------------------------");
+            Console.WriteLine($"Grupo: {grupo}");            
+            Console.WriteLine($"Resumo: {explicacao}");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("");
+        }
     }
 }

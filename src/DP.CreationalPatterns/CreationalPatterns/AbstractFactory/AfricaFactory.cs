@@ -1,4 +1,6 @@
-﻿namespace DP.CreationalPatterns.AbstractFactory
+﻿using DP.CreationalPatterns.AbstractFactory;
+
+namespace DP.CreationalPatterns.CreationalPatterns.AbstractFactory
 {
     class AfricaFactory : ContinenteFactory
     {
