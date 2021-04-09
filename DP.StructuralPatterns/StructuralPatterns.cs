@@ -18,6 +18,9 @@ namespace DP.StructuralPatterns
             switch (opcao)
             {
                 case "1":
+                    Adapter.Adapter.Executar();
+                    break;
+
                 case "2":
                 case "3":
                 case "4":
