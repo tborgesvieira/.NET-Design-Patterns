@@ -1,15 +1,15 @@
 ﻿using DP.Helpers;
 using System;
 
-namespace DP.StructuralPatterns
+namespace DP.BehavioralPatterns
 {
-    public class StructuralPatterns
+    public static class BehavioralPatterns
     {
         public static void Executar()
         {
             Console.Clear();
             Opcoes();
-            var opcao = Console.ReadKey().KeyChar.ToString().ToUpper();
+            var opcao = Console.ReadLine().ToUpper();
             Executar(opcao);
         }
 
@@ -18,15 +18,16 @@ namespace DP.StructuralPatterns
             switch (opcao)
             {
                 case "1":
-                    Adapter.Adapter.Executar();
-                    break;
-
                 case "2":
                 case "3":
                 case "4":
                 case "5":
                 case "6":
                 case "7":
+                case "8":
+                case "9":
+                case "10":
+                case "11":
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nAinda não implementado, pressione uma tecla para continuar...\n");
@@ -45,18 +46,22 @@ namespace DP.StructuralPatterns
         private static void Opcoes()
         {
             CabecalhoHelper.GerarCabecalho(
-                "Structural Pattern",
-                "São padrões que facilitam o design, identificando uma maneira simples de realizar\nrelacionamentos entre entidades.");
+                "Behavioral Patterns",
+                "São padrões que identificam padrões de comunicação comuns entre objetos.\nAo fazer isso, esses padrões aumentam a flexibilidade na realização da comunicação.");
 
             Console.WriteLine("---------------------------");
             Console.WriteLine("Informe uma opção e de enter");
-            Console.WriteLine("1 - Adapter");
-            Console.WriteLine("2 - Bridge");
-            Console.WriteLine("3 - Composite");
-            Console.WriteLine("4 - Decorator");
-            Console.WriteLine("5 - Facade");
-            Console.WriteLine("6 - Flyweight");
-            Console.WriteLine("7 - Proxy");
+            Console.WriteLine("1 - Chain of Responsibility");
+            Console.WriteLine("2 - Command");
+            Console.WriteLine("3 - Interpreter");
+            Console.WriteLine("4 - Iterator");
+            Console.WriteLine("5 - Mediator");
+            Console.WriteLine("6 - Memento");
+            Console.WriteLine("7 - Observer");
+            Console.WriteLine("8 - State");
+            Console.WriteLine("9 - Strategy");
+            Console.WriteLine("10 - Template Method");
+            Console.WriteLine("11 - Visitor");
             Console.WriteLine("\nS - Sair");
             Console.WriteLine("---------------------------");
         }

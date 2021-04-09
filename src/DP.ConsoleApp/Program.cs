@@ -17,7 +17,7 @@ namespace DP.ConsoleApp
 
         private static void OpcaoSelecionada()
         {
-            var operacao = Console.ReadKey().KeyChar.ToString().ToUpper();
+            var operacao = Console.ReadLine().ToUpper();
 
             switch (operacao)
             {
@@ -33,6 +33,12 @@ namespace DP.ConsoleApp
 
                 case "2":
                     StructuralPatterns.StructuralPatterns.Executar();
+                    Console.Clear();
+                    Opcoes();
+                    break;
+
+                case "3":
+                    BehavioralPatterns.BehavioralPatterns.Executar();
                     Console.Clear();
                     Opcoes();
                     break;
@@ -57,10 +63,11 @@ namespace DP.ConsoleApp
             Console.WriteLine("Para um melhor entendimento como sugestão utilizar o debug.");
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Selecione o padrão:");
+            Console.WriteLine("Informe uma opção e de enter");
             Console.WriteLine("");
             Console.WriteLine("1 - Creational Patterns (Padrões de criação)");
             Console.WriteLine("2 - Structural Patterns (Design estrutural)");
+            Console.WriteLine("3 - Behavioral Patterns (Comportamentais)");
             Console.WriteLine("\nS - Sair");
             Console.WriteLine("-----------------------------------------------------------");
             OpcaoSelecionada();

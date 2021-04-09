@@ -9,7 +9,7 @@ namespace DP.CreationalPatterns
         {
             Console.Clear();
             Opcoes();
-            var opcao = Console.ReadKey().KeyChar.ToString().ToUpper();
+            var opcao = Console.ReadLine().ToUpper();
             Executar(opcao);
         }
 
@@ -52,7 +52,7 @@ namespace DP.CreationalPatterns
                 "São padrões de design que lidam com mecanismos de criação de objetos,\ntentando criar objetos de maneira adequada à situação.\nA forma básica de criação de objeto pode resultar em problemas de design ou em complexidade adicional ao design.");
 
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Selecione uma opção");
+            Console.WriteLine("Informe uma opção e de enter");
             Console.WriteLine("1 - Abstract Factory");
             Console.WriteLine("2 - Builder");
             Console.WriteLine("3 - Factory Method");
