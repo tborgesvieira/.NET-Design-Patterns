@@ -8,8 +8,4 @@
     <ProjectReference Include="..\src\DP.Helpers\DP.Helpers.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Bridge\" />
-  </ItemGroup>
-
 </Project>

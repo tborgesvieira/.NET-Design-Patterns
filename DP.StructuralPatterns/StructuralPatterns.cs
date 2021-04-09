@@ -9,7 +9,7 @@ namespace DP.StructuralPatterns
         {
             Console.Clear();
             Opcoes();
-            var opcao = Console.ReadKey().KeyChar.ToString().ToUpper();
+            var opcao = Console.ReadLine().ToUpper();
             Executar(opcao);
         }
 
@@ -22,6 +22,9 @@ namespace DP.StructuralPatterns
                     break;
 
                 case "2":
+                    Bridge.Bridge.Executar();
+                    break;
+
                 case "3":
                 case "4":
                 case "5":
