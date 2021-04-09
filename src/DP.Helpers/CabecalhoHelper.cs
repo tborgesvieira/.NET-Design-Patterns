@@ -20,7 +20,7 @@ namespace DP.Helpers
         {
             Console.Clear();
             Console.WriteLine("---------------------------");
-            Console.WriteLine($"Grupo: {grupo}");            
+            Console.WriteLine($"Grupo: {grupo}");
             Console.WriteLine($"Resumo: {explicacao}");
             Console.WriteLine("---------------------------");
             Console.WriteLine("");

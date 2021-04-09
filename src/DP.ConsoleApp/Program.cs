@@ -3,9 +3,9 @@ using System.Text;
 
 namespace DP.ConsoleApp
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("----------------------------------------------------------------------------------------------");
@@ -14,7 +14,7 @@ namespace DP.ConsoleApp
             Console.WriteLine("");
             Opcoes();
         }
-        
+
         private static void OpcaoSelecionada()
         {
             var operacao = Console.ReadKey().KeyChar.ToString().ToUpper();
@@ -22,13 +22,21 @@ namespace DP.ConsoleApp
             switch (operacao)
             {
                 case "S":
-                    Console.Clear();                    
+                    Console.Clear();
                     break;
+
                 case "1":
-                    CreationalPatterns.CreationalPatterns.CreationalPatterns.Executar();
+                    CreationalPatterns.CreationalPatterns.Executar();
                     Console.Clear();
                     Opcoes();
                     break;
+
+                case "2":
+                    StructuralPatterns.StructuralPatterns.Executar();
+                    Console.Clear();
+                    Opcoes();
+                    break;
+
                 default:
                     OperacaoInvalida();
                     break;
@@ -40,7 +48,7 @@ namespace DP.ConsoleApp
             Console.Clear();
             Console.WriteLine("Opção selecionada é inválida!");
             Console.WriteLine("");
-            Opcoes();            
+            Opcoes();
         }
 
         private static void Opcoes()
@@ -52,6 +60,7 @@ namespace DP.ConsoleApp
             Console.WriteLine("Selecione o padrão:");
             Console.WriteLine("");
             Console.WriteLine("1 - Creational Patterns (Padrões de criação)");
+            Console.WriteLine("2 - Structural Patterns (Design estrutural)");
             Console.WriteLine("\nS - Sair");
             Console.WriteLine("-----------------------------------------------------------");
             OpcaoSelecionada();

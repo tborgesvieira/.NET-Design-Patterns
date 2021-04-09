@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DP.Helpers
+﻿namespace DP.Helpers
 {
     public static class AvaliacaoHelper
     {

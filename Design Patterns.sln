@@ -7,15 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - App", "1 - App", "{7E07
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - .NET Design Patterns", "2 - .NET Design Patterns", "{B2ABD05C-87DC-4CCC-A23D-E30B9C12B37E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.ConsoleApp", "src\DP.ConsoleApp\DP.ConsoleApp.csproj", "{3A05F897-B128-45E4-BB74-62358048810C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DP.ConsoleApp", "src\DP.ConsoleApp\DP.ConsoleApp.csproj", "{3A05F897-B128-45E4-BB74-62358048810C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 - Creational Patterns", "2.1 - Creational Patterns", "{3177B40B-F1BE-4F82-9A74-38B7EAB4C475}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.CreationalPatterns", "src\DP.CreationalPatterns\DP.CreationalPatterns.csproj", "{3E2182A9-04C1-4A90-8934-1A600B5C3301}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DP.CreationalPatterns", "src\DP.CreationalPatterns\DP.CreationalPatterns.csproj", "{3E2182A9-04C1-4A90-8934-1A600B5C3301}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Helpers", "3 - Helpers", "{5CD9C30C-5A4B-4A5B-8D1D-03C7672B368D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Helpers", "src\DP.Helpers\DP.Helpers.csproj", "{19476560-746D-4582-A621-2FF3811852B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DP.Helpers", "src\DP.Helpers\DP.Helpers.csproj", "{19476560-746D-4582-A621-2FF3811852B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.2 - Structural Patterns", "2.2 - Structural Patterns", "{633EE4BC-5195-45FA-8B6D-F689A585105C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.StructuralPatterns", "DP.StructuralPatterns\DP.StructuralPatterns.csproj", "{48A50ECB-3CF8-4740-A5BD-71500AA00430}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{19476560-746D-4582-A621-2FF3811852B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19476560-746D-4582-A621-2FF3811852B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19476560-746D-4582-A621-2FF3811852B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A50ECB-3CF8-4740-A5BD-71500AA00430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A50ECB-3CF8-4740-A5BD-71500AA00430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A50ECB-3CF8-4740-A5BD-71500AA00430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A50ECB-3CF8-4740-A5BD-71500AA00430}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,8 @@ Global
 		{3177B40B-F1BE-4F82-9A74-38B7EAB4C475} = {B2ABD05C-87DC-4CCC-A23D-E30B9C12B37E}
 		{3E2182A9-04C1-4A90-8934-1A600B5C3301} = {3177B40B-F1BE-4F82-9A74-38B7EAB4C475}
 		{19476560-746D-4582-A621-2FF3811852B2} = {5CD9C30C-5A4B-4A5B-8D1D-03C7672B368D}
+		{633EE4BC-5195-45FA-8B6D-F689A585105C} = {B2ABD05C-87DC-4CCC-A23D-E30B9C12B37E}
+		{48A50ECB-3CF8-4740-A5BD-71500AA00430} = {633EE4BC-5195-45FA-8B6D-F689A585105C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88FDC9C1-E70D-4AB1-B4A0-B813B36D570F}
