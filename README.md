@@ -1,7 +1,9 @@
 # .NET-Design-Patterns
 Projetos de estudo com base no site https://www.dofactory.com/net/design-patterns
 
-Patteners estudados até o momento:
+Esse projeto foi criado para relembrar e revisar alguns dos patterns utilizados.
+
+Estudado até o momento:
 
 ## Creational Patterns
 1. Abstract Factory
