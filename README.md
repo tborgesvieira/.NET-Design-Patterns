@@ -9,3 +9,6 @@ Patteners estudados até o momento:
 3. Factory Method
 4. Prototype
 5. Singleton
+
+## Structural Patterns
+1. Adapter
